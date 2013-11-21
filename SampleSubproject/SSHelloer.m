@@ -12,7 +12,7 @@
 
 - (NSString *)hello
 {
-    return @"Hello from SSHelloer in SampleSubproject!";
+    return @"Hello World from SSHelloer in SampleSubproject!";
 }
 
 @end

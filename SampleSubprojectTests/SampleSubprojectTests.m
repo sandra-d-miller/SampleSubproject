@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <SampleSubproject/SSHelloer.h>
 
 @interface SampleSubprojectTests : XCTestCase
 
@@ -28,7 +29,10 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    
+    XCTAssertEqualObjects([[[SSHelloer alloc] init] hello], @"Hello from SSHelloer in SampleSubproject!", @"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+
 }
 
 @end
